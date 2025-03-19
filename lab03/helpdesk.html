@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CWA Help Desk Appointment">
+    <meta name="keywords" content="Help Desk, IT Support, Appointment">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWA Help Desk Appointment</title>
+</head>
+<body>
+    <img src="D:LAB COS/lab03/logo.png" alt="CWA Logo">
+    <h1>CWA Help Desk Appointment</h1>
+    <p>Check Blackboard for where CWA tutors will be available.</p>
+    
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset>
+            <legend>Student details</legend>
+            <p>
+                <label for="studentid">Student ID</label>
+                <input type="text" name="studentid" id="studentid" required>
+            </p>
+            <p>
+                <label for="givenname">Given Name</label>
+                <input type="text" name="givenname" id="givenname" maxlength="15" required>
+            </p>
+        </fieldset>  
+        
+        <fieldset>
+            <legend>Your Course</legend>
+            <label>
+                <input type="radio" name="course" value="COS10011"> COS10011
+            </label>
+            <label>
+                <input type="radio" name="course" value="COS60004"> COS60004
+            </label>
+            <label>
+                <input type="radio" name="course" value="COS60007"> COS60007
+            </label>
+            <p>
+                <label for="yourtutor">Your Tutor</label>
+                <select name="yourtutor" id="yourtutor">
+                    <option value="">Please select</option>
+                </select>
+            </p> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Issue</legend>
+            <label>
+                <input type="checkbox" name="issue[]" value="HTML"> HTML
+            </label>
+            <label>
+                <input type="checkbox" name="issue[]" value="CSS"> CSS
+            </label>
+            <label for="textbox">Description of Issue</label>
+               <input type="text" id="textbox" name="textbox" placeholder="Write description of your problem here...." required>
+            </label>
+           
+        </fieldset>
+        <fieldset>
+            <legend>Preferred Date & Time</legend>
+            <p>
+                <label for="preferred-date">Preferred Date:</label>
+                <input type="date" id="preferred-date" name="preferred_date" required>
+            </p>
+            <p>
+                <label for="preferred-time">Preferred Time:</label>
+                <input type="time" id="preferred-time" name="preferred_time" required>
+            </p>
+        </fieldset>
+        <input type="submit" value="Book">
+        <input type="reset" value="Reset form">
+        
+        
+        
+          
+        
+
+    </form>
+</body>
+</html>
